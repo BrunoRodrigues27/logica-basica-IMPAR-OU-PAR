@@ -8,12 +8,12 @@ resu.style.display = 'none'
 
 function verificar() {
     info.innerHTML = 'informação'
-    var nvalor = Number(ntxt.value)
+    var nvalor = Number.parseInt(ntxt.value)
 
-    if (nvalor <= 0) {
+    if (nvalor < 0) {
         resu.style.display = 'none'
         info.innerHTML = 'Número inválido'
-        alert('[ERROR] Números inferiores ou iguais a zero (0) são inválidos')
+        alert('[ERROR] Números inferiores a zero (0) são inválidos')
     } else {
         resu.style.display = 'block'
     }
